@@ -1,0 +1,227 @@
+/* ===============================
+   GLOBAL RESET & BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* ===============================
+   CENTER CONTAINER
+================================ */
+.box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 650px;
+    margin: 60px auto;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   HEADINGS
+================================ */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+/* ===============================
+   FORMS
+================================ */
+form {
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e0;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102,126,234,0.2);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button,
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   LINKS AS BUTTONS
+================================ */
+a {
+    text-decoration: none;
+}
+
+a.btn-link {
+    display: block;
+    margin-top: 12px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    background: #4a5568;
+    color: #fff;
+}
+
+a.btn-link:hover {
+    background: #2d3748;
+}
+
+/* ===============================
+   TABLES
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #667eea;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+    background: #f7fafc;
+}
+
+/* ===============================
+   STATUS COLORS
+================================ */
+.beginner {
+    color: #e53e3e;
+    font-weight: bold;
+}
+
+.intermediate {
+    color: #dd6b20;
+    font-weight: bold;
+}
+
+.advanced {
+    color: #38a169;
+    font-weight: bold;
+}
+
+.ok {
+    color: #38a169;
+    font-weight: bold;
+}
+
+.gap {
+    color: #e53e3e;
+    font-weight: bold;
+}
+
+/* ===============================
+   MESSAGES
+================================ */
+.success {
+    background: #c6f6d5;
+    color: #22543d;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.error {
+    background: #fed7d7;
+    color: #742a2a;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   SMALL TEXT / HINTS
+================================ */
+.hint {
+    font-size: 13px;
+    color: #718096;
+    margin-top: 4px;
+}
+
+/* ===============================
+   DASHBOARD LINKS
+================================ */
+.dashboard-links a {
+    display: block;
+    padding: 14px;
+    margin-top: 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    background: #edf2f7;
+    color: #2d3748;
+    transition: all 0.2s ease;
+}
+
+.dashboard-links a:hover {
+    background: #667eea;
+    color: #fff;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 600px) {
+    .box {
+        margin: 20px;
+        padding: 20px;
+    }
+}

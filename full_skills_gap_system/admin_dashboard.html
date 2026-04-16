@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard | Skills Gap System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* ===============================
+   SIDEBAR
+================================ */
+.sidebar {
+    width: 270px;
+    background: #1a202c;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+    color: white;
+}
+
+.nav-links a:hover {
+    transform: translateX(5px);
+    opacity: 0.9;
+}
+
+.skills { background: #38a169; }
+.users { background: #3182ce; }
+.reports { background: #dd6b20; }
+.tasks { background: #805ad5; }
+.review { background: #667eea; }
+.logout { background: #e53e3e; }
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.slogan {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffd369;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div>
+        <h2>Admin Panel</h2>
+
+        <div class="nav-links">
+            <a href="skills.html" class="skills">Manage Skills</a>
+            <a href="backend/users/view_users.php" class="users">View Users</a>
+            <a href="backend/gap/skills_gap_report.php" class="reports">Skills Gap Reports</a>
+            <a href="backend/tasks/add_task.php" class="tasks">Add Skill Task</a>
+            <a href="backend/test/review_submissions.php" class="review">Review Submissions</a>
+            <a href="backend/test/manage_scores.php">Grade submission</a>
+            <a href="logout.php" class="logout">Logout</a>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+    <div class="hero">
+        <h1>Digital Skills Gap System</h1>
+
+        <p>
+            Welcome to the control center. Monitor performance,
+            manage digital competencies, review submissions,
+            and bridge the digital divide with data-driven insights.
+        </p>
+
+        <div class="slogan">
+            "Closing Gaps. Unlocking Potential. Let’s Level Up 🚀"
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

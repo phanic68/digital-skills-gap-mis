@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Dashboard | Digital Skills Gap Analyzer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* ===============================
+   GLOBAL
+================================ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ===============================
+   MAIN DASHBOARD CONTAINER
+================================ */
+.dashboard-container{
+    width:90%;
+    max-width:1100px;
+    background:#ffffff;
+    border-radius:15px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.2);
+    display:flex;
+    overflow:hidden;
+}
+
+/* ===============================
+   LEFT SIDE (MENU)
+================================ */
+.sidebar{
+    width:35%;
+    background: linear-gradient(180deg, #4c51bf, #6b46c1);
+    padding:40px 25px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:22px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:white;
+    padding:14px;
+    margin:8px 0;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+    transition:0.3s ease;
+    background:rgba(255,255,255,0.15);
+}
+
+.sidebar a:hover{
+    background:white;
+    color:#4c51bf;
+    transform:translateX(5px);
+}
+
+/* Logout special */
+.logout{
+    background:#e53e3e !important;
+}
+
+/* ===============================
+   RIGHT SIDE (WELCOME AREA)
+================================ */
+.content{
+    width:65%;
+    padding:60px 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.content h1{
+    font-size:34px;
+    color:#4c51bf;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:18px;
+    color:#555;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.motto{
+    margin-top:30px;
+    font-size:20px;
+    font-weight:bold;
+    color:#6b46c1;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media(max-width:900px){
+    .dashboard-container{
+        flex-direction:column;
+    }
+
+    .sidebar, .content{
+        width:100%;
+    }
+
+    .content{
+        text-align:center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- LEFT SIDE MENU -->
+    <div class="sidebar">
+        <h2>USER PANEL</h2>
+
+        <a href="backend/test/submit_task.php">Take Skill Test</a>
+        <a href="skills.html">Add Skill</a>
+        <a href="backend/skills/view_skills.php">View Skills</a>
+        <a href="backend/test/my_recommendations.php">Learning Recommendations</a>
+        <a href="backend/test/view_results.php">View My Results</a>
+        <a href="logout.php" class="logout">Logout</a>
+    </div>
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="content">
+        <h1>Digital Skills Gap Analyzer System</h1>
+
+        <p>
+            Welcome to your personalized skill development dashboard.
+            This system helps you identify your digital skill level,
+            detect gaps, and receive smart learning recommendations.
+        </p>
+
+        <p>
+            Take assessments, track your progress, and move from
+            <strong>Beginner</strong> to <strong>Advanced</strong>
+            with guided learning resources.
+        </p>
+
+        <div class="motto">
+            "Identify. Improve. Excel."
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

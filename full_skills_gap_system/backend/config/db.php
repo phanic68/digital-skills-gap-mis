@@ -1,0 +1,1 @@
+<?php $conn=new mysqli('localhost','root','','skills_gap_db'); ?>

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome | Digital Skills Gap Analyzer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* ===============================
+   GLOBAL
+================================ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+/* ===============================
+   MAIN BOX
+================================ */
+.welcome-box{
+    background: rgba(255,255,255,0.1);
+    padding:50px;
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    max-width:700px;
+}
+
+h1{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    margin:10px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+.register{
+    background:white;
+    color:#4c51bf;
+}
+
+.login{
+    background:#38a169;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.motto{
+    margin-top:25px;
+    font-style:italic;
+    font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="welcome-box">
+
+    <h1>Digital Skills Gap Management information System</h1>
+
+    <p>
+        Identify your digital skill level, detect skill gaps,
+        and receive personalized learning recommendations
+        to improve from Beginner to Advanced.
+    </p>
+
+    <a href="register.html" class="btn register">Get Started</a>
+    <a href="login.html" class="btn login">Login</a>
+
+    <div class="motto">
+        "Identify. Improve. Excel."
+    </div>
+
+</div>
+
+</body>
+</html>
